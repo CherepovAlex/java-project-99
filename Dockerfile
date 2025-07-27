@@ -7,6 +7,9 @@ WORKDIR /workspace
 # Копируем все файлы проекта
 COPY . .
 
+# Даем права на выполнение gradlew
+RUN chmod +x gradlew
+
 # Собираем проект (используем обертку Gradle для гарантии версии)
 RUN ./gradlew installDist
 
