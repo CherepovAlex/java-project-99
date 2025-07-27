@@ -40,3 +40,12 @@ dependencies {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+
+sonar {
+	properties {
+		property("sonar.projectKey", "CherepovAlex_java-project-99")
+		property("sonar.organization", "aleksandrcherepov")
+		property("sonar.host.url", "https://sonarcloud.io")
+	}
+}
