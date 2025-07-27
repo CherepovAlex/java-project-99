@@ -1,0 +1,25 @@
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/your_db
+#    username: your_user
+#    password: your_password
+#    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    default: development
+  application:
+    name: app
+
+  h2:
+    console:
+      enabled: true
+
+server:
+  address: 0.0.0.0
+  port: 8080
