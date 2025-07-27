@@ -1,7 +1,7 @@
 # Этап сборки (Builder)
 FROM gradle:8.13.0-jdk21
 
-WORKDIR .
+WORKDIR /app
 
 COPY . .
 
